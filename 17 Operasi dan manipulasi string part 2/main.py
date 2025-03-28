@@ -21,8 +21,8 @@ print(salam + " is lower = "+str(apakah_lower))
 apakah_upper = salam.isupper()
 print(salam + " is upper = "+str(apakah_upper))
 
-# isalpha() <-- untuk mengecek semuanya huruf
-# isalnum() <-- huruf dan angka
+# isalpha() <-- untuk mengecek apakah semuanya huruf
+# isalnum() <-- untuk mengecek apakah string ada huruf dan angka
 # isdecimal() <-- ngecek apa angka aja
 # isspace() <-- spasi, tab, newline \n, 
 # istitle() <-- semua kata dimulai dengan huruf besar
@@ -67,7 +67,7 @@ tengah = "tengah".center(20,':')
 print("'"+tengah+"'")
 
 # kebalikannya -> strip()
-tengah = tengah.strip(":")
+tengah = tengah.strip(":") #menghilangkan tanda :
 print("'"+tengah+"'")
 
 kanan = kanan.strip()
