@@ -42,3 +42,5 @@ data_string.reverse()
 print(f"data string setelah diurutkan lalu dibalik = \n{data_string}")
 
 
+
+
