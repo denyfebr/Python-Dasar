@@ -19,3 +19,14 @@ print(file.read())
 print(f"Apakah file sudah diclose : {file.closed}")
 file.close()
 print(f"Apakah file sudah diclose : {file.closed}")
+
+## salah satu teknik membuka file di python
+
+print("\n",3*"="," Membaca file txt dengan with",3*"=")
+
+with open("./63 Read External File/data.txt",mode="r") as file:
+    content = file.readline()
+    print(content,end="")
+    print(f"Apakah file sudah diclose : {file.closed}")
+
+print(f"Apakah file sudah diclose : {file.closed}")
