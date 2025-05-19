@@ -24,9 +24,12 @@ def delete_console():
 
             is_done = input("Apakah Anda yakin menghapus(y/n)? ")
             if is_done == "y" or is_done == "Y":
+                Operasi.delete(no_buku)
                 break
         else:
             print("nomor tidak valid, silahkan masukan lagi")
+
+    print("Data berhasil dihapus")
 
 def update_console():
     read_console()
@@ -34,6 +37,13 @@ def update_console():
         print("Silahkan pilih nomor buku yang akan diupdate")
         no_buku = int(input("Nomor Buku: "))
         data_buku = Operasi.read(index=no_buku)
+
+        data_break = data_buku.split(',')
+        pk = data_break[0]
+        data_add = data_break[1]
+        penulis = data_break[2]
+        judul = data_break[3]
+        tahun = data_break[4][:-1]
 
         if data_buku:
             break
